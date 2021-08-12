@@ -1,0 +1,11 @@
+my-app:
+  component: "@sls-next/serverless-component"
+  inputs:
+    name: "my-app"
+    memory: 1024
+    bucketName: "my-app"
+    bucketRegion: "ap-northeast-2"
+    domain: "example.com"
+    cloudfront:
+      # distributionId: E3OL1MVOULLN9W
+      comment: "This is My App"
