@@ -1,11 +1,15 @@
 my-app:
-  component: "@sls-next/serverless-component"
+  component: "@sls-next/serverless-component＠３.６.０"
   inputs:
-    name: "my-app"
+    name: my-app
     memory: 1024
-    bucketName: "my-app"
-    bucketRegion: "ap-northeast-2"
-    domain: "example.com"
+    bucketName: my-app
+    bucketRegion: ap-northeast-2
+    name:
+      defaultLambda: myAppDefaultLambda
+      apiLambda: myAppApiLambda
+      imageLambda: myAppImageLambda
+    # domain: "example.com"
     cloudfront:
       # distributionId: E3OL1MVOULLN9W
-      comment: "This is My App"
+      comment: This is My App
